@@ -26,6 +26,6 @@ public class Main {
         // conversazione con npc che ti da qualche consiglio
         // la storia è un sogno generato dal mago scimmia
         //
-        String lore = "Vi ritrovate nella locanda del Rutto di Drago.  "
+        String lore = "Vi ritrovate nella locanda del Rutto di Drago.  ";
     }
 }
