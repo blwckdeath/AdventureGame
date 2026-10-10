@@ -1,7 +1,8 @@
 package org.generation.italy;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import com.generation.library.Console;
+import org.generation.italy.warrior.Adventure;
+
 public class Main {
     static void main() {
         // Messaggio di benvenuto;
@@ -26,6 +27,8 @@ public class Main {
         // conversazione con npc che ti da qualche consiglio
         // la storia è un sogno generato dal mago scimmia
         //
-        String lore = "Vi ritrovate nella locanda del Rutto di Drago.  ";
+        String warrior = "Tobia";
+        int hearts = Adventure.game(warrior);
+        Console.print("cuori:" + hearts);
     }
 }
