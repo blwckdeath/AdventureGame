@@ -1,5 +1,7 @@
 package org.generation.italy;
 
+import org.generation.italy.Druid.Adventures;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -27,5 +29,11 @@ public class Main {
         // la storia è un sogno generato dal mago scimmia
         //
         String lore = "Vi ritrovate nella locanda del Rutto di Drago.  ";
+        Adventures.game();
+        Adventures.runSteps();
+        Adventures.runSteps1();
+        Adventures.runSteps2();
+        Adventures.runSteps3();
+
     }
 }
