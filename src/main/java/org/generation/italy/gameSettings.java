@@ -19,11 +19,7 @@ public class gameSettings {
         return fellowshipName;
     }
 
-    public static void createPg(){
-        String pgName = pgName();
-        String fellowshipName = fellowshipName();
-        int pgChoice = pgChoice(pgName);
-    }
+
     public static int pgChoice(String pgName) {
         int pgClass = 1;
         do{

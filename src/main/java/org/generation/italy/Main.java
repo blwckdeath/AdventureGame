@@ -39,8 +39,13 @@ public class Main {
             IO.println("Gioco Terminato.");
             return;
         } else {
-            gameSettings.createPg();
+            String pgName = gameSettings.pgName();
+            String fellowshipName = gameSettings.fellowshipName();
+            int pgChoice = gameSettings.pgChoice(pgName);
+            Lore.startGame(fellowshipName);
+
             }
+
             gameSettings.diceThrown();
             int attackLuck = gameSettings.diceThrown();
             IO.println(attackLuck);
