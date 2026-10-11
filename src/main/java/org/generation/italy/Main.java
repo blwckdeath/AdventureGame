@@ -1,5 +1,8 @@
 package org.generation.italy;
 
+import java.util.Random;
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -26,6 +29,20 @@ public class Main {
         // conversazione con npc che ti da qualche consiglio
         // la storia è un sogno generato dal mago scimmia
         //
-        String lore = "Vi ritrovate nella locanda del Rutto di Drago.  ";
+        //menu();
+        //stats();
+        //startGame();
+        //endGame();
+        int answer = 0;
+        Menu.menu();
+        if(answer ==2){
+            IO.println("Gioco Terminato.");
+            return;
+        } else {
+            gameSettings.createPg();
+            }
+            gameSettings.diceThrown();
+            int attackLuck = gameSettings.diceThrown();
+            IO.println(attackLuck);
     }
 }
