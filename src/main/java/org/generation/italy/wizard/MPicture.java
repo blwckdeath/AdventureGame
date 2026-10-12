@@ -1,8 +1,10 @@
 package org.generation.italy.wizard;
 
-public class Sprite {
+import org.generation.italy.thief.Retard;
+
+public class MPicture {
     public static void widzardAscii(){
-        IO.println ("                                                                                                                                                      \n" +
+        String mageAscii = "                                                                                                                                                      \n" +
                 "                                                                                       ---*%@#                                                        \n" +
                 "                                                                                              -@@# -. .                                               \n" +
                 "                                                                                =    :.=#@@@@@@#:#% ==                                                \n" +
@@ -45,6 +47,11 @@ public class Sprite {
                 "                                                          #@@@         +@#         .@@@:                                                              \n" +
                 "                                                        -@@@@@......::::......     .@@@@=                                                             \n" +
                 "                                         *%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*+=-:.                                                  \n" +
-                "                                                       ..::::::-----+#%@@@@@%#*++=------::::::::.....                                                 \n");
+                "                                                       ..::::::-----+#%@@@@@%#*++=------::::::::.....                                                 \n";
+        String[] mageAsciiArray = mageAscii.split("\\n");
+        for (int i = 0; i < mageAsciiArray.length; i++) {
+            IO.println(mageAsciiArray[i]);
+            Retard.retardSprite();
+        }
     }
 }

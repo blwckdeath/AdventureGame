@@ -1,8 +1,10 @@
 package org.generation.italy.main;
 
 import org.generation.italy.druid.Adventures;
+import org.generation.italy.paladin.PAdventure;
 import org.generation.italy.thief.Adventure;
 import org.generation.italy.warrior.WAdventure;
+import org.generation.italy.wizard.MAdventure;
 
 public class Lore {
     public static void startGame(){
@@ -20,10 +22,10 @@ public class Lore {
     public static int midGame(String pgName, int pgChoice, int lives){
         switch (pgChoice){
             case 1:
-                int MageHP;
+                lives = MAdventure.game(pgName, lives);
                 break;
             case 2:
-                int palladinHP;
+                lives = PAdventure.game(lives);
                 break;
             case 3:
                 lives = Adventure.thief(pgName,lives);

@@ -1,7 +1,7 @@
 package org.generation.italy.wizard;
 import java.util.Scanner;
 
-public class Adventure {
+public class MAdventure {
 
 
 

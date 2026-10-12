@@ -1,9 +1,11 @@
 ///
 package org.generation.italy.paladin;
 
-public class Picture {
-        public static void paladinPicture (){
-            String picture = "                                                                                         \n" +
+import org.generation.italy.thief.Retard;
+
+public class PPicture {
+        public static void paladinAscii (){
+            String paladinAscii = "                                                                                         \n" +
                     "                                                                                         \n" +
                     "                                                                                         \n" +
                     "                                                                                         \n" +
@@ -55,6 +57,9 @@ public class Picture {
                     "                                                                                         \n" +
                     "                                                                                         \n" +
                     "                                                                                         \n";
-            System.out.println(picture);
+            String[] paladinAsciiArray = paladinAscii.split("\\n");
+            for (int i = 0; i < paladinAsciiArray.length; i++) {
+                IO.println(paladinAsciiArray[i]);
+                Retard.retardSprite();
         }
 }

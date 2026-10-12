@@ -6,7 +6,7 @@ public class WAdventure {
         Console.print("--------------------------------------------------");
         Console.print("   L'AVVENTURA DEL GUERRIERO " + warriorName.toUpperCase());
         Console.print("--------------------------------------------------");
-        Console.print(Picture.picture);
+
         Console.print("Sei " + warriorName + ", un guerriero armato di spadone e armatura in piastre.");
 
         //Step 1: 3 scelte

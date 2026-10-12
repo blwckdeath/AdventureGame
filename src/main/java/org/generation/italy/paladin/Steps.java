@@ -1,8 +1,30 @@
 package org.generation.italy.paladin;
 
+import java.util.Scanner;
+
 public class Steps {
-    public static boolean steps = true;
-        public static int catacombRoute ( int lives){
+    public static Scanner input = new Scanner(System.in);
+    public static void paladinJourney(int lives) {
+        IO.println("Congratulazioni! Sei il Paladino, che la fede sia con te!");
+        IO.println("Sei catapultato nella chiesa di OH, dove tutti sono abbastanza sorpresi. ");
+        IO.println("All'esterno della chiesa si aprono tre strade quale scegli?");
+        IO.println("1. Le catacombe dei ricordi annebbiati");
+        IO.println("2. Il Pantheon Immacolato");
+        IO.println("3. La Casa di un'anziana signora");
+
+        IO.println("Inserisci il numero della tua scelta: ");
+
+        int choice = input.nextInt();
+        if (choice == 1) {
+            Steps.catacombRoute(lives);
+        } else if (choice == 2) {
+            Steps.pantheonRoute(lives);
+        } else if (choice == 3) {
+            Steps.grannyRoute(lives);
+        }
+    }
+
+    public static int catacombRoute ( int lives){
         IO.println("--- LE CATACOMBE DEI RICORDI ANNEBBIATI ---");
         IO.println("Scendi i gradini umidi. L'aria si fa pesante e senti dei cupi sussurri nell'oscurità.");
         IO.println("Mentre avanzi, una fitta nebbia ti avvolge e davanti a te noti due cose:");
@@ -10,7 +32,7 @@ public class Steps {
         IO.println("2. Uno scrigno di pietra sigillato da catene arrugginite.");
 
         IO.println("Cosa decidi di fare, Paladino? Inserisci il numero: ");
-        int catacombChoice = Adventure.scanner.nextInt();
+        int catacombChoice = input.nextInt();
 
         if (catacombChoice == 1) {
             IO.println("Ti avvicini all'altare. La luce azzurra risuona con la tua fede!");
@@ -35,7 +57,7 @@ public class Steps {
         IO.println("2. 'Voglio proteggere i deboli e riportare la luce.'");
 
         IO.println("Scegli le parole del Paladino: ");
-        int doorChoice = Adventure.scanner.nextInt();
+        int doorChoice = input.nextInt();
 
         if (doorChoice == 1) {
             IO.println("Il guardiano di pietra scuote la testa: 'La sete di potere ti acceca'.");
@@ -65,7 +87,7 @@ public class Steps {
         IO.println("3. Il silenzio");
 
         IO.println("Inserisci il numero della tua risposta: ");
-        int pantheonChoice = Adventure.scanner.nextInt();
+        int pantheonChoice = input.nextInt();
 
         if (pantheonChoice == 2) {
             IO.println("L'entità di luce risplende ancora più forte e accenna un inchino.");
@@ -97,7 +119,7 @@ public class Steps {
         IO.println("2. Rifiuti gentilmente il cibo, insospettito, e le chiedi spiegazioni su quei boccetti.");
         IO.println("3. Ti avvicini allo specchio coperto dal velo e decidi di scoprirlo.");
 
-        int grannyChoice = Adventure.scanner.nextInt();
+        int grannyChoice = input.nextInt();
 
         if (grannyChoice == 1) {
             IO.println("Mangi con appetito. Dopo pochi morsi, le tue palpebre diventano pesantissime...");
@@ -132,7 +154,7 @@ public class Steps {
         IO.println("1. 'I mostri sono mostri! Vi sconfiggerò tutti in nome della giustizia!'");
         IO.println("2. 'La vera giustizia difende chi è debole, a prescindere dal suo aspetto.'");
 
-        int reverseChoice = Adventure.scanner.nextInt();
+        int reverseChoice = input.nextInt();
 
         if (reverseChoice == 1) {
             IO.println("Sguaini la spada e attacchi. Ma in questo mondo i tuoi poteri di luce feriscono i buoni!");
@@ -159,7 +181,7 @@ public class Steps {
         IO.println("=======================================================");
 
         IO.println("Premi 1 per sguainare la spada e colpire il guardiano: ");
-        int finalChoice = Adventure.scanner.nextInt();
+        int finalChoice = input.nextInt();
         if (finalChoice == 1) {
             IO.println("IL MONDO SI SGRETOLA");
             IO.println("Il pavimento sotto i tuoi piedi si spacca in mille pezzi");

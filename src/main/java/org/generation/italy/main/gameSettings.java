@@ -1,8 +1,11 @@
 package org.generation.italy.main;
 
 import org.generation.italy.druid.Picture;
+import org.generation.italy.paladin.PPicture;
 import org.generation.italy.thief.Retard;
 import org.generation.italy.thief.Sprite;
+import org.generation.italy.warrior.WPicture;
+import org.generation.italy.wizard.MPicture;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -31,10 +34,12 @@ public class gameSettings {
             pgClass = input.nextInt();
             switch(pgClass) {
                 case 1:
+                    MPicture.widzardAscii();
                     IO.println();
                     IO.println(pgName + ", sei un MAGO!");
                     break;
                 case 2:
+                    PPicture.paladinAscii();
                     IO.println();
                     IO.println(pgName + ", sei un PALADINO!");
                     break;
@@ -49,6 +54,7 @@ public class gameSettings {
                     IO.println(pgName + ", sei un DRUIDO!");
                     break;
                 case 5:
+                    WPicture.warriorAscii();
                     IO.println();
                     IO.println(pgName + ", sei un GUERRIERO!");
                     break;
