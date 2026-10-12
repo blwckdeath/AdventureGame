@@ -61,5 +61,6 @@ public class PPicture {
             for (int i = 0; i < paladinAsciiArray.length; i++) {
                 IO.println(paladinAsciiArray[i]);
                 Retard.retardSprite();
+            }
         }
 }
