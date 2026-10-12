@@ -1,4 +1,4 @@
-package Wizard;
+package org.generation.italy.wizard;
 
 public class Sprite {
     public static void widzardAscii(){

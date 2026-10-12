@@ -1,4 +1,4 @@
-package thief;
+package org.generation.italy.thief;
 
 public class Sprite {
     public static void mainSprite() {

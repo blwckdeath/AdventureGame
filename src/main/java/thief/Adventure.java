@@ -1,10 +1,7 @@
-package thief;
-import thief.Sprite;
+package org.generation.italy.thief;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.util.Random;
-import thief.Retard;
 
 public class Adventure {
     public static Scanner input = new Scanner(System.in);

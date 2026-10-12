@@ -1,4 +1,4 @@
-package org.generation.italy.druid;
+package org.generation.italy.Druid;
 import java.util.Scanner;
 
 public class Steps {
@@ -95,7 +95,7 @@ return lifes;
                 IO.println("Non hai indovinato, ritenta!");
             }
         }
-        if(solvedRiddle) {
+        if(solvedRiddle == true) {
             IO.println("Il Guardiano ti dice \"Per la prossima scelta ricordati che l'apparenza inganna.\"");
 
         } else {

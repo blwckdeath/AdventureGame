@@ -1,4 +1,4 @@
-package thief;
+package org.generation.italy.thief;
 
 public class Dialogues {
     public static String dialogue1 =  "<<L'oro era maledetto, tutto ciò che ti sembra reale è una finzione ma ormai è troppo tardi>>";

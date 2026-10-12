@@ -1,4 +1,4 @@
-package Wizard;
+package org.generation.italy.wizard;
 import java.util.Random;
 public class DiceResults {
 
