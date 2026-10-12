@@ -1,4 +1,4 @@
-package org.generation.italy;
+package org.generation.italy.main;
 
 import java.util.Scanner;
 
